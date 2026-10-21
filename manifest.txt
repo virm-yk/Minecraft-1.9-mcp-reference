@@ -1,0 +1,105 @@
+# MINECRAFT 1.9 REFERENCE FILE MANIFEST
+#
+# Source repository: https://github.com/CircuitLord/Minecraft-1.9-MCP
+# Source commit (master HEAD): bc89baf1fd0b5d422478619e7aba01c0b23bd405
+# Source tree used: src/minecraft (the finalized, readable MCP-mapped decompiled
+#   source tree; temp/src/minecraft was NOT used and files were not mixed)
+# Unmodified: YES - all .java files copied byte-for-byte from the repository.
+#
+# Version identification (from conf/version.cfg):
+#   MCPVersion    = 9.24
+#   ClientVersion = 1.9
+#   ServerVersion = 1.9
+# Corroborated by in-code constants:
+#   RealmsSharedConstants.VERSION_STRING = "1.9", NETWORK_PROTOCOL_VERSION = 107
+#   CHANGELOG: "== v9.24 == + Updated to client 1.9 & server 1.9"
+#
+# All .java paths are relative to the repository root.
+# NOT FOUND classes: none (all 71 requested classes collected)
+# Non-.java auxiliary files: conf/version.cfg, conf/mcp.cfg, CHANGELOG
+
+MOVEMENT AND INPUT:
+src/minecraft/net/minecraft/entity/Entity.java
+src/minecraft/net/minecraft/entity/EntityLivingBase.java
+src/minecraft/net/minecraft/entity/player/EntityPlayer.java
+src/minecraft/net/minecraft/client/entity/EntityPlayerSP.java
+src/minecraft/net/minecraft/util/MovementInput.java
+src/minecraft/net/minecraft/util/MovementInputFromOptions.java
+src/minecraft/net/minecraft/client/settings/GameSettings.java
+src/minecraft/net/minecraft/client/settings/KeyBinding.java
+src/minecraft/net/minecraft/entity/player/PlayerCapabilities.java
+src/minecraft/net/minecraft/util/FoodStats.java
+
+COLLISION AND BLOCK MOVEMENT:
+src/minecraft/net/minecraft/util/math/AxisAlignedBB.java
+src/minecraft/net/minecraft/world/World.java
+src/minecraft/net/minecraft/block/Block.java
+src/minecraft/net/minecraft/block/state/IBlockState.java
+src/minecraft/net/minecraft/block/BlockLiquid.java
+src/minecraft/net/minecraft/block/BlockDynamicLiquid.java
+src/minecraft/net/minecraft/block/BlockStaticLiquid.java
+src/minecraft/net/minecraft/block/BlockLadder.java
+src/minecraft/net/minecraft/block/BlockVine.java
+src/minecraft/net/minecraft/block/BlockIce.java
+src/minecraft/net/minecraft/block/BlockPackedIce.java
+src/minecraft/net/minecraft/block/BlockSlime.java
+src/minecraft/net/minecraft/block/BlockSoulSand.java
+src/minecraft/net/minecraft/block/BlockWeb.java
+src/minecraft/net/minecraft/block/material/Material.java
+src/minecraft/net/minecraft/util/math/MathHelper.java
+src/minecraft/net/minecraft/util/math/BlockPos.java
+src/minecraft/net/minecraft/util/math/Vec3d.java
+
+MELEE COMBAT, TARGETING, AND SERVER HANDLING:
+src/minecraft/net/minecraft/client/Minecraft.java
+src/minecraft/net/minecraft/client/renderer/EntityRenderer.java
+src/minecraft/net/minecraft/client/multiplayer/PlayerControllerMP.java
+src/minecraft/net/minecraft/entity/player/EntityPlayerMP.java
+src/minecraft/net/minecraft/network/NetHandlerPlayServer.java
+src/minecraft/net/minecraft/network/play/client/CPacketUseEntity.java
+src/minecraft/net/minecraft/util/math/RayTraceResult.java
+src/minecraft/net/minecraft/util/DamageSource.java
+src/minecraft/net/minecraft/util/EntityDamageSource.java
+src/minecraft/net/minecraft/util/EntityDamageSourceIndirect.java
+src/minecraft/net/minecraft/util/CombatRules.java
+src/minecraft/net/minecraft/entity/SharedMonsterAttributes.java
+
+ITEMS, SHIELDS, AND ATTRIBUTES:
+src/minecraft/net/minecraft/item/Item.java
+src/minecraft/net/minecraft/item/ItemStack.java
+src/minecraft/net/minecraft/item/ItemSword.java
+src/minecraft/net/minecraft/item/ItemTool.java
+src/minecraft/net/minecraft/item/ItemAxe.java
+src/minecraft/net/minecraft/item/ItemArmor.java
+src/minecraft/net/minecraft/item/ItemShield.java
+src/minecraft/net/minecraft/init/Items.java
+src/minecraft/net/minecraft/util/EnumHand.java
+src/minecraft/net/minecraft/item/EnumAction.java
+src/minecraft/net/minecraft/inventory/EntityEquipmentSlot.java
+src/minecraft/net/minecraft/util/CooldownTracker.java
+src/minecraft/net/minecraft/entity/ai/attributes/IAttribute.java
+src/minecraft/net/minecraft/entity/ai/attributes/IAttributeInstance.java
+src/minecraft/net/minecraft/entity/ai/attributes/AttributeModifier.java
+src/minecraft/net/minecraft/entity/ai/attributes/AbstractAttributeMap.java
+src/minecraft/net/minecraft/entity/ai/attributes/AttributeMap.java
+src/minecraft/net/minecraft/entity/ai/attributes/ModifiableAttributeInstance.java
+src/minecraft/net/minecraft/entity/ai/attributes/RangedAttribute.java
+
+ENCHANTMENTS AND EFFECTS:
+src/minecraft/net/minecraft/enchantment/EnchantmentHelper.java
+src/minecraft/net/minecraft/enchantment/Enchantment.java
+src/minecraft/net/minecraft/enchantment/EnchantmentDamage.java
+src/minecraft/net/minecraft/enchantment/EnchantmentKnockback.java
+src/minecraft/net/minecraft/enchantment/EnchantmentProtection.java
+src/minecraft/net/minecraft/enchantment/EnchantmentFireAspect.java
+src/minecraft/net/minecraft/potion/Potion.java
+src/minecraft/net/minecraft/potion/PotionEffect.java
+src/minecraft/net/minecraft/potion/PotionAttackDamage.java
+src/minecraft/net/minecraft/potion/PotionHealthBoost.java
+src/minecraft/net/minecraft/init/MobEffects.java
+
+VERSION IDENTIFICATION:
+src/minecraft/net/minecraft/realms/RealmsSharedConstants.java
+conf/version.cfg
+conf/mcp.cfg
+CHANGELOG
